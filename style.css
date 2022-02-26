@@ -28,6 +28,15 @@ body {
 .flag {
     color: #c9c9c9;
 }
+
+.above-grid {
+    width: 500;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    gap: 80px;
+}
+
 .grid {
     height: 400px;
     width: 400px;
@@ -89,14 +98,15 @@ div {
 }
   
 #result {
-    margin-top: 5px;
-    color: #e76346;
+    color: #c9c9c9;
 }
 
 .button {
     cursor: pointer;
-    font-size: 24px;
+    font-size: 20px;
     padding: 3px;
     border-radius: 16px;
+    background-color: #4199d3;
+    color: #c9c9c9;
     border-color: #000000;
 }

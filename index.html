@@ -13,10 +13,12 @@
         </div>
         <div class="game-space">
             <div class="container">
-                <div class="flag">Flags left: <span id='flags-left'></span></div>
+                <div class="above-grid">
+                    <div class="flag">Flags left: <span id='flags-left'></span></div> 
+                    <button class="button" value="refresh" onClick="window.location.reload()">Restart</button>
+                    <div id="result"></div>
+                </div>
                 <div class="grid"></div>
-                <div id="result"></div>
-                <button class="button" value="refresh" onClick="window.location.reload()">Restart</button>
             </div>
         </div>
         <script src="script.js"></script>
