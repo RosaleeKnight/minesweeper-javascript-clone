@@ -1,5 +1,9 @@
 body {
-    background-color: #b2d0e0f6;
+    background-color: #2b3242;
+}
+
+.title {
+    color: #c9c9c9;
 }
 
 .instructions {
@@ -8,6 +12,7 @@ body {
     justify-content: center;
     font-size: 14px;
     font-weight: bold;
+    color: #c9c9c9;
 }
 
 .game-space {
@@ -20,15 +25,18 @@ body {
     align-content: center;
 }
   
+.flag {
+    color: #c9c9c9;
+}
 .grid {
     height: 400px;
     width: 400px;
     display: flex;
     flex-wrap: wrap;
-    background-color: #c9c9c9;
+    background-color: #4199d3;
     margin-left: 50px;
     margin-top: 20px;
-    border: 10px solid #999999f5;
+    border: 3px solid #2b3242;
     margin-bottom: 10px;
 }
   
@@ -40,8 +48,9 @@ div {
 .valid {
     height: 40px;
     width: 40px;
-    border: 5px solid;
-    border-color: #f5f3eb #b9b9b9 #dad8d1ad #fff9db;
+    border: 2px solid;
+    background-color: #4199d3;
+    border-color: #2b3242;
     box-sizing: border-box;
 }
   
@@ -49,33 +58,34 @@ div {
     height: 40px;
     width: 40px;
     border: 2px solid;
-    background-color: #cecab7;
-    border-color: #92918d;
+    background-color: #c9c9c9;
+    border-color: #2b3242;
     box-sizing: border-box;
 }
   
 .bomb {
     height: 40px;
     width: 40px;
-    border: 5px solid;
-    border-color: #f5f3eb #b9b9b9 #dad8d1ad #fff9db;
+    border: 2px solid;
+    border-color: #2b3242;
+    background-color: #4199d3;
     box-sizing: border-box;
 }
   
 .one {
-    color: #e76346;
+    color: #3e633e;
 }
   
 .two {
-    color: #4199d3;
+    color: #3e633e;
 }
   
 .three {
-    color: #57da59;
+    color: #3e633e;
 }
   
 .four{
-    color: #bb41d3;
+    color: #3e633e;
 }
   
 #result {
@@ -83,9 +93,10 @@ div {
     color: #e76346;
 }
 
-button {
+.button {
     cursor: pointer;
-    padding: 2px;
-    font-weight: bold;
     font-size: 24px;
+    padding: 3px;
+    border-radius: 16px;
+    border-color: #000000;
 }
