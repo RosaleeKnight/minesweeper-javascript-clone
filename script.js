@@ -11,29 +11,29 @@ document.addEventListener('DOMContentLoaded', () => {
     function createBoard() {
         flagsLeft.innerHTML = bombAmount
   
-      const bombsArray = Array(bombAmount).fill('bomb')
-      const emptyArray = Array(width*width - bombAmount).fill('valid')
-      const gameArray = emptyArray.concat(bombsArray)
-      const shuffledArray = gameArray.sort(() => Math.random() -0.5)
+        const bombsArray = Array(bombAmount).fill('bomb')
+        const emptyArray = Array(width*width - bombAmount).fill('valid')
+        const gameArray = emptyArray.concat(bombsArray)
+        const shuffledArray = gameArray.sort(() => Math.random() -0.5)
   
-      for(let i = 0; i < width*width; i++) {
-        const square = document.createElement('div')
-        square.setAttribute('id', i)
-        square.classList.add(shuffledArray[i])
-        grid.appendChild(square)
-        squares.push(square)
+        for(let i = 0; i < width*width; i++) {
+            const square = document.createElement('div')
+            square.setAttribute('id', i)
+            square.classList.add(shuffledArray[i])
+            grid.appendChild(square)
+            squares.push(square)
   
-        square.addEventListener('click', function(e) {
-          click(square)
+            square.addEventListener('click', function(e) {
+                click(square)
         })
   
         square.oncontextmenu = function(e) {
-          e.preventDefault()
-          addFlag(square)
+            e.preventDefault()
+            addFlag(square)
         }
-      }
+    }
   
-      for (let i = 0; i < squares.length; i++) {
+    for (let i = 0; i < squares.length; i++) {
         let total = 0
         const isLeftEdge = (i % width === 0)
         const isRightEdge = (i % width === width -1)
@@ -43,13 +43,13 @@ document.addEventListener('DOMContentLoaded', () => {
             if (i > 9 && !isRightEdge && squares[i +1 -width].classList.contains('bomb')) total ++
             if (i > 10 && squares[i -width].classList.contains('bomb')) total ++
             if (i > 11 && !isLeftEdge && squares[i -1 -width].classList.contains('bomb')) total ++
-             if (i < 98 && !isRightEdge && squares[i +1].classList.contains('bomb')) total ++
-             if (i < 90 && !isLeftEdge && squares[i -1 +width].classList.contains('bomb')) total ++
+            if (i < 98 && !isRightEdge && squares[i +1].classList.contains('bomb')) total ++
+            if (i < 90 && !isLeftEdge && squares[i -1 +width].classList.contains('bomb')) total ++
             if (i < 88 && !isRightEdge && squares[i +1 +width].classList.contains('bomb')) total ++
             if (i < 89 && squares[i +width].classList.contains('bomb')) total ++
-          squares[i].setAttribute('data', total)
+            squares[i].setAttribute('data', total)
+            }
         }
-      }
     }
     createBoard()
   
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
             flags ++
             flagsLeft.innerHTML = bombAmount- flags
             checkForWin()
-        } else {
+            } else {
             square.classList.remove('flag')
             square.innerHTML = ''
             flags --
