@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             addFlag(square)
         }
     }
-  
+    
     for (let i = 0; i < squares.length; i++) {
         let total = 0
         const isLeftEdge = (i % width === 0)
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!square.classList.contains('checked') && (flags < bombAmount)) {
             if (!square.classList.contains('flag')) {
             square.classList.add('flag')
-            square.innerHTML = ' 🚩'
+            square.innerHTML = '🚩'
             flags ++
             flagsLeft.innerHTML = bombAmount- flags
             checkForWin()

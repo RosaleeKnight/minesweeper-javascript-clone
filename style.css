@@ -1,11 +1,6 @@
 body {
     background-color: #2b3242;
 }
-
-.title {
-    color: #c9c9c9;
-}
-
 .instructions {
     display: flex;
     align-items: center;
@@ -14,21 +9,17 @@ body {
     font-weight: bold;
     color: #c9c9c9;
 }
-
 .game-space {
     display: flex;
     justify-content: center;
 }
-
 .container {
     width: 500px;
     align-content: center;
 }
-  
 .flag {
     color: #c9c9c9;
 }
-
 .above-grid {
     width: 500;
     display: flex;
@@ -36,71 +27,68 @@ body {
     align-content: center;
     gap: 80px;
 }
-
 .grid {
     height: 400px;
     width: 400px;
     display: flex;
     flex-wrap: wrap;
-    background-color: #4199d3;
+    background-color: #2b3242;
     margin-left: 50px;
     margin-top: 20px;
-    border: 3px solid #2b3242;
     margin-bottom: 10px;
 }
-  
 div {
     font-size: 25px;
     text-align: center;
 }
-
 .valid {
     height: 40px;
     width: 40px;
     border: 2px solid;
-    background-color: #4199d3;
+    border-radius: 5px;
+    background: radial-gradient(#80d5fd, #6aa3e6);
     border-color: #2b3242;
     box-sizing: border-box;
 }
-  
 .checked {
     height: 40px;
     width: 40px;
     border: 2px solid;
-    background-color: #c9c9c9;
+    border-radius: 5px;
+    background: radial-gradient(#fff, #c2c3c5);
     border-color: #2b3242;
     box-sizing: border-box;
-}
-  
+} 
 .bomb {
     height: 40px;
     width: 40px;
     border: 2px solid;
+    border-radius: 5px;
     border-color: #2b3242;
-    background-color: #4199d3;
+    background: radial-gradient(#80d5fd, #6aa3e6);
     box-sizing: border-box;
-}
-  
+} 
 .one {
-    color: #3e633e;
-}
-  
+    color: #4199d3;
+} 
 .two {
-    color: #3e633e;
+    color: #1dc038;
 }
-  
 .three {
-    color: #3e633e;
+    color: #c420a0;
+}  
+.four {
+    color: #131581;
 }
-  
-.four{
-    color: #3e633e;
+.five {
+    color: #b61313;
 }
-  
+.six {
+    color: #083508;
+}
 #result {
     color: #c9c9c9;
 }
-
 .button {
     cursor: pointer;
     font-size: 20px;
