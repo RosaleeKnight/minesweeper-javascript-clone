@@ -7,7 +7,7 @@ body {
     justify-content: center;
     font-size: 14px;
     font-weight: bold;
-    color: #c9c9c9;
+    color: #e4e0e0;
 }
 .game-space {
     display: flex;
@@ -25,7 +25,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-content: center;
-    gap: 80px;
+    gap: 110px;
 }
 .grid {
     height: 400px;
@@ -47,7 +47,7 @@ div {
     border: 2px solid;
     border-radius: 5px;
     background: radial-gradient(#80d5fd, #6aa3e6);
-    border-color: #2b3242;
+    border-color: #000000;
     box-sizing: border-box;
 }
 .checked {
@@ -56,7 +56,7 @@ div {
     border: 2px solid;
     border-radius: 5px;
     background: radial-gradient(#fff, #c2c3c5);
-    border-color: #2b3242;
+    border-color: #000000;
     box-sizing: border-box;
 } 
 .bomb {
@@ -64,7 +64,7 @@ div {
     width: 40px;
     border: 2px solid;
     border-radius: 5px;
-    border-color: #2b3242;
+    border-color: #000000;
     background: radial-gradient(#80d5fd, #6aa3e6);
     box-sizing: border-box;
 } 
@@ -78,7 +78,7 @@ div {
     color: #c420a0;
 }  
 .four {
-    color: #131581;
+    color: #0e1064;
 }
 .five {
     color: #b61313;
@@ -87,14 +87,14 @@ div {
     color: #083508;
 }
 #result {
-    color: #c9c9c9;
+    color: #e4e0e0;
 }
 .button {
     cursor: pointer;
     font-size: 20px;
     padding: 3px;
     border-radius: 16px;
-    background-color: #4199d3;
-    color: #c9c9c9;
+    background: radial-gradient(#80d5fd, #6aa3e6);
+    color: #e4e0e0;
     border-color: #000000;
 }
