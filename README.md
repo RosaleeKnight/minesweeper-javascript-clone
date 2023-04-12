@@ -1,7 +1,5 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/RosaleeKnight/minesweeper-javascript-clone)
 ![GitHub language count](https://img.shields.io/github/languages/count/RosaleeKnight/minesweeper-javascript-clone)
-![LGTM Alerts](https://img.shields.io/lgtm/alerts/github/RosaleeKnight/minesweeper-javascript-clone)
-![LGTM Grade](https://img.shields.io/lgtm/grade/javascript/github/RosaleeKnight/minesweeper-javascript-clone)
 ![GitHub](https://img.shields.io/github/license/RosaleeKnight/minesweeper-javascript-clone)
 ![GitHub issues](https://img.shields.io/github/issues/RosaleeKnight/minesweeper-javascript-clone)
 [![HitCount](https://hits.dwyl.com/RosaleeKnight/minesweeper-javascript-clone.svg?style=flat)](http://hits.dwyl.com/RosaleeKnight/minesweeper-javascript-clone)
